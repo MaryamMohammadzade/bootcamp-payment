@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment page</title>
+    <!-- <link
+      rel="stylesheet"
+      href="./assets/css/styles.css"
+    /> -->
+    <style>
+      .body{
+        background-color: #83ccdd;
+        font-family: Arial, sans-serif;
+      }
+      .box{
+        width: 300px;
+        margin:100px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+        text-align: center;
+      }
+      .box form {
+        text-align: left;
+      }
+      h2 {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      .box img {
+        width:80px;
+        height: 80px;
+      }
+      .box input[type="text"]{
+        display: inline-block;
+        width: 100%;
+        background-color: #e2e6ef;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 10px;
+        box-sizing: border-box;
+      }
+      .box input[type="text"][name="date"]{
+        display: inline;
+        width: 100%;
+      
+      }
+      .box input[type="password"][name="cvv"]{
+        display: inline;
+        width: 100%;
+        background-color: #e2e6ef;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 10px;
+        box-sizing: border-box;
+      }
+
+      .box input[type="submit"] {
+        width: 100%;
+        background-color: #278fb4;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-bottom: 5px;
+      }
+      .box input[type="submit"]:hover {
+        background-color: #2980b9;
+      }
+      .box label {
+        display: block;
+        margin-bottom: 5px;
+    }
+      .box span{
+        text-align: center;
+        font-size: 10px;
+        color: #656565;
+      }
+      .col{
+        display: inline-block;
+        width: 49%;
+      }
+    </style>
+  </head>
+  <body class="body">
+       <div class="box">
+          <img src="./assets/img/girl.jpg" alt="avatar">
+          <h2>Payment info</h2>
+          <form action="#" method="post">
+              <label for="Fulname">Full Name</label>
+              <input type="text" id='Fulname' name="Fulname" placeholder="Alex Smit">
+
+              <label for="number">Credit Card Number</label>
+              <input type="text" id='number' name="number" placeholder="1234 1234 1234 1234">
+
+              <div class="col">
+                <label for="date">Exp date</label>
+                <input type="text" id='date' name="date" placeholder="MM/YY" pattern="\d{2}/\d{2}">
+              </div>
+
+              <div class="col">
+                <label for="cvv">CVV</label>
+                <input type="password" id='cvv' name="cvv" placeholder="***">
+              </div>
+
+              <label for="zipcode">Zip Code</label>
+              <input type="text" id='zipcode' name="zipcode" placeholder="90210">
+
+              <input type="submit" value="Confirm Payment">
+          </form>
+          <span>you verify that this info is correct</span>
+        </div>
+    
+  </body>
+
+
+
+</html>
